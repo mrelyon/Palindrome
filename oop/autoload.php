@@ -7,12 +7,12 @@
 */
 class Index{
 	//
-	 static function setVar(){
+	 static function setLoad(){
 		//
 		require_once('csy.php');
 	}
 }
 
-spl_autoload_register("Index::setVar");
+spl_autoload_register("Index::setLoad");
 
 ?>
