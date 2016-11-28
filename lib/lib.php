@@ -17,6 +17,8 @@ class Palindrome{
 		foreach ($word_list as $key => $string){
 	    #		
 		self::$init_string = $string;
+		#
+		self::$p_drome = '';
 		# do a word reverse
 		for($i = strlen($string) - 1; $i  >= 0; $i--){
 			self::$p_drome .= $string[$i];
