@@ -8,7 +8,6 @@
 require('lib/autoload.php');
 use Lifeofanisland\Elyon\Lib\Palindrome as palindrome;
 $get_palindrome = new palindrome;
-$get_palindrome::getPalindrome("mum");
-
-
+$palindrome_check = $get_palindrome::getPalindrome("mum");
+echo $palindrome_check;
 ?>

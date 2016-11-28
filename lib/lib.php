@@ -17,9 +17,9 @@ class Palindrome{
 			self::$p_drum .= $string[$i];
 		}
 		if(self::$p_drum == $string){
-		   echo self::$p_drum." is a palindrome";
+		   return self::$p_drum." is a palindrome";
 	    }else{
-	    	echo self::$p_drum. " is not a palindrome";
+	    	return self::$p_drum. " is not a palindrome";
 	    }	
 			
 	}
