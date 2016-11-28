@@ -9,7 +9,7 @@ class Index{
 	//
 	 static function setLoad(){
 		//
-		require_once('csy.php');
+		require_once('lib.php');
 	}
 }
 
