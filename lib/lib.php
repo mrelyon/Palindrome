@@ -13,7 +13,7 @@ class Palindrome{
 	protected static $final_dromes;
 	protected static $palindrome_out;
 	#
-	static function getPalindrome($word_list){
+	final static function getPalindrome($word_list){
 		# initialize for json wrap up
 		self::$palindrome_out = array();
 		# process in each word
@@ -30,7 +30,7 @@ class Palindrome{
 		self::$final_dromes = array();
 		# check if reversed word is same with original word   
 		if(self::$p_drome == $string){
-			# yes word is a palindrome
+			# yay word is a palindrome
 		   self::$final_dromes['palindrome'] = "true";//self::$p_drome." is a palindrome <br/>";
 		   self::$final_dromes['word'] = self::$p_drome;
 		   self::$final_dromes['remark'] = "is a palindrome";
