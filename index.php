@@ -17,9 +17,15 @@ $words = ["cool",
           "meme",
           "lol",
           "noon",
-          "rar"];
+          "rar",
+          "bool"];
 # initiate
 $palindrome_check = $get_palindrome::getPalindrome($words);
 # result
-echo $palindrome_check;
+$json = json_decode($palindrome_check, true);
+$count_result = count($json);
+for ($i=0; $i < $count_result; $i++) { 
+	echo "".$json[$i]['word']." ".$json[$i]['remark']."<br/>";
+}
+
 ?>
